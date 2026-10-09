@@ -1,0 +1,15 @@
+{
+  "name": "vizzualizer",
+  "version": "1.0.0",
+  "description": "browser music visualizer with a corner info panel showing track tags and real bitrate",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "FIXTURE_DIR=${FIXTURE_DIR:-.fixtures} node test/metadata.test.mjs",
+    "smoke": "FIXTURE_DIR=${FIXTURE_DIR:-.fixtures} node test/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  },
+  "license": "MIT"
+}
